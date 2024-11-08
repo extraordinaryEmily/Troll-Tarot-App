@@ -10,6 +10,8 @@ import CardTypes from './screens/CardTypes';
 import SpreadTypes from './screens/SpreadTypes';
 import HowToPlay from './screens/HowToPlay';
 import About from './screens/About';
+import CardList from './screens/CardList'
+import CardDetails from './screens/CardDetails';
 import { SourceSerifPro_400Regular } from '@expo-google-fonts/source-serif-pro';
 
 const Stack = createStackNavigator();
@@ -63,6 +65,8 @@ export default function App() {
         <Stack.Screen name="SpreadTypes" component={SpreadTypes}/>
         <Stack.Screen name="HowToPlay" component={HowToPlay}/>
         <Stack.Screen name="About" component={About}/>
+        <Stack.Screen name="CardList" component={CardList}/>
+        <Stack.Screen name="CardDetails" component={CardDetails}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

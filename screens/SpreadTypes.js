@@ -71,6 +71,5 @@ const styles = StyleSheet.create({
     justifyContent: 'left', // Align buttons to the left
     alignItems: 'center',
     width: '86.5%',
-    backgroundColor: '#000000',
   },
 });

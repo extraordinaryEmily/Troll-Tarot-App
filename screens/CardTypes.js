@@ -13,7 +13,6 @@ const CardTypes = () => {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <Header title="Types of Cards" navigation={navigation} />
-        
         <View style={styles.folderButtonContainer}>
           {/* Row 1 */}
           <FolderButton
@@ -23,26 +22,26 @@ const CardTypes = () => {
           />
           <FolderButton
             imageSource={require('../assets/wands_deck.png')}
-            label="Minor: Wands"
+            label="Wands"
             onPress={() => navigation.navigate('CardList', { type: 'Wands' })}
           />
 
           {/* Row 2 */}
           <FolderButton
             imageSource={require('../assets/swords_deck.png')}
-            label="Minor: Swords"
+            label="Swords"
             onPress={() => navigation.navigate('CardList', { type: 'Swords' })}
           />
           <FolderButton
             imageSource={require('../assets/cups_deck.png')}
-            label="Minor: Cups"
+            label="Cups"
             onPress={() => navigation.navigate('CardList', { type: 'Cups' })}
           />
 
           {/* Row 3 */}
           <FolderButton
             imageSource={require('../assets/pentacles_deck.png')}
-            label="Minor: Pentacles"
+            label="Pentacles"
             onPress={() => navigation.navigate('CardList', { type: 'Pentacles' })}
           />
         </View>
@@ -71,6 +70,19 @@ const styles = StyleSheet.create({
     justifyContent: 'left', // Align buttons to the left
     alignItems: 'center',
     width: '86.5%',
-    backgroundColor: '#000000',
+  },
+  textContainer: {
+    width: '100%', // Make sure the container takes full width
+    paddingVertical: 15, // Add some vertical padding
+  },
+  subtitle: {
+    paddingTop: 2,
+    lineHeight: 20,
+    fontFamily: 'SourceSerifPro',
+    fontSize: 18,
+    color: '#ffffff',
+    textAlign: 'left',
+    marginBottom: 10,
+    marginHorizontal: 15,
   },
 });
