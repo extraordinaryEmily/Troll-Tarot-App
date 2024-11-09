@@ -17,33 +17,33 @@ const SpreadTypes = () => {
         <View style={styles.folderButtonContainer}>
           {/* Row 1 */}
           <FolderButton
-            imageSource={require('../assets/major_arcana_deck.png')}
+            imageSource={require('../assets/spread1.png')}
             label="Linear 3 Card"
-            onPress={() => navigation.navigate('CardList', { type: 'Major Arcana' })}
+            onPress={() => navigation.navigate('SpreadDetails', { title: 'Linear 3 Card' })}
           />
           <FolderButton
-            imageSource={require('../assets/wands_deck.png')}
+            imageSource={require('../assets/spread2.png')}
             label="Balanced 3 Card"
-            onPress={() => navigation.navigate('CardList', { type: 'Wands' })}
+            onPress={() => navigation.navigate('SpreadDetails', { title: 'Balanced 3 Card' })}
           />
 
           {/* Row 2 */}
           <FolderButton
-            imageSource={require('../assets/swords_deck.png')}
+            imageSource={require('../assets/spread3.png')}
             label="Foundation 3 Card"
-            onPress={() => navigation.navigate('CardList', { type: 'Swords' })}
+            onPress={() => navigation.navigate('SpreadDetails', { title: 'Foundation 3 Card' })}
           />
           <FolderButton
-            imageSource={require('../assets/cups_deck.png')}
+            imageSource={require('../assets/spread4.png')}
             label="Heart Shaker"
-            onPress={() => navigation.navigate('CardList', { type: 'Cups' })}
+            onPress={() => navigation.navigate('SpreadDetails', { title: 'Heart Shaker' })}
           />
 
           {/* Row 3 */}
           <FolderButton
-            imageSource={require('../assets/pentacles_deck.png')}
+            imageSource={require('../assets/spread5.png')}
             label="A New Year"
-            onPress={() => navigation.navigate('CardList', { type: 'Pentacles' })}
+            onPress={() => navigation.navigate('SpreadDetails', { title: 'A New Year' })}
           />
         </View>
       </View>

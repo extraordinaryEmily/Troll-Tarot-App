@@ -63,10 +63,10 @@ const styles = StyleSheet.create({
   },
   backgroundImage: {
     width: width * 1,
-    height: height * .64,
+    height: width / (1080/1545),
     position: 'absolute',
     bottom: 0,
-    resizeMode: 'contain',
+    resizeMode: 'cover',
   },
   titleImage: {
     width: width * 0.7,

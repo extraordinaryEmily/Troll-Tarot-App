@@ -13,7 +13,7 @@ const FolderButton = ({ imageSource, label, onPress }) => {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
       <View style={styles.imageContainer}>
-        <Image source={imageSource} style={styles.image} resizeMode="cover" />
+        <Image source={imageSource} style={styles.image}/>
       </View>
       <View style={styles.labelContainer}>
         <Text style={styles.label}>{label}</Text>
@@ -27,7 +27,7 @@ export default FolderButton;
 const styles = StyleSheet.create({
   button: {
     width: windowWidth * 0.35,
-    height: windowHeight * 0.2,
+    height: windowHeight * 0.22,
     backgroundColor: '#ffffff',
     borderRadius: 15,
     overflow: 'hidden',
@@ -41,27 +41,37 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
   imageContainer: {
-    width: '100%',
-    height: '64%', // Container takes up 64% of the button's height
+    width: '90%',
+    height: '60%', // Container takes up 64% of the button's height
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden', // Prevents overflow
+    // backgroundColor: '#FF0000',
+    marginTop: 8,
   },
   image: {
     width: '100%', // Make the image take the full width of the container
-    height: 'auto', // Height adjusts automatically based on the width
-    maxHeight: '100%', // Ensures the image does not exceed the container's height
+    height: '100%',
+    // height: 'auto', // Height adjusts automatically based on the width
+    // maxHeight: '100%', // Ensures the image does not exceed the container's height
+    resizeMode: "contain",
   },
   labelContainer: {
-    width: '100%',
-    height: '34%', // Bottom 1/3 of the button
+    width: '90%',
+    height: '20%', // Bottom 1/3 of the button
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    // backgroundColor: '#0000FF',
+    marginTop: 5,
   },
   label: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: 'bold',
     fontFamily: 'serif',
     color: '#523F5A',
+    lineHeight: 15,
+    textAlign: 'center',
+    justifyContent: 'flex-start',
+    textAlignVertical: 'top'
   },
 });
